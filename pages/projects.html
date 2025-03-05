@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <div id="header-container"></div>
+    <script>
+        fetch("../components/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById("header-container").innerHTML = html);
+    </script>
+</head>
+
+
+<body>
+    <header>
+        <div id="navbar-container"></div>
+        <script>
+            fetch("../components/navbar.html")
+                .then(response => response.text())
+                .then(html => document.getElementById("navbar-container").innerHTML = html);
+        </script>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <main role="main" class="pb-3">
+
+
+
+            <!-- Main content container with fade-in effect -->
+            <div class="text-lg-start text-center" id="fade-in" style="opacity: 0;">
+                <div class="container px-4 py-5" id="featured-3">
+
+                    <!-- Page title and description -->
+                    <h2 class="pb-2 text-body-emphasis" data-bs-theme="dark">Projects</h2>
+                    <p class="pb-2 border-bottom">I strive to deliver innovative solutions and contribute to interesting
+                        projects. Feel free to browse through my work and explore the different technologies and
+                        approaches that were employed. I'm excited about the possibilities that lie ahead, and I'm eager
+                        to connect with like-minded professionals.</p>
+
+                    <!-- Project cards, using Bootstrap grid layout -->
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+                        <!-- Hook or be Hooked -->
+                        <div class="pb-4 feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-body fs-2 mb-3">
+                                <!-- Tech stack icons -->
+                                <i class="devicon-canva-original px-1"></i>
+                                <i class="devicon-dotnetcore-plain px-1"></i>
+                                <i class="devicon-javascript-plain px-1"></i>
+                                <img class="px-1"
+                                    src="https://cdn.phaser.io/images/logo/phaser-pixel-medium-shaded.png" />
+                            </div>
+                            <h3 class="fs-2 text-body-emphasis" data-bs-theme="dark">Hook or be Hooked</h3>
+                            <!-- Project Description -->
+                            <p>
+                                A multiplayer game where you can play as either a fish or a hook. Join as a player or
+                                spectator and see who comes out on top!
+                                <br />
+                                <br />
+                                Features:
+                            <ul class="text-start">
+                                <li>
+                                    Player Roles: Play as a <b>Fish</b>, dodging the hook, or as the <b>Hook</b>, trying
+                                    to catch the fish.
+                                    If the player roles are already taken, you'll be assigned the <b>Spectator</b> role.
+                                </li>
+                                <li>
+                                    Spectator Mode: As a spectator, you can throw trash into the game by tapping or
+                                    clicking the screen to make things more
+                                    difficult for the hook.
+                                </li>
+                                <li>
+                                    Real-time Multiplayer: All players and spectators are connected through SignalR,
+                                    which ensures all actions are updated in
+                                    real-time.
+                                </li>
+                            </ul>
+                            </p>
+                            <!-- Project Links (Demo, GitHub, Documentation) -->
+                            <!-- <a asp-page="HookOrBeHooked/Index" class="icon-link"> 
+                    Demo 
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a> -->
+                            <a href="https://drive.google.com/file/d/1-6e0nmZh8sY4hohAaob4fie2Op18sqjC/view?usp=sharing"
+                                class="icon-link">
+                                Design Document
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/RyanAtRowan/MoonPi_UnPublished" class="icon-link">
+                                GitHub
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Red Book Project -->
+                        <div class="pb-4 feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-body fs-2 mb-3">
+                                <!-- Tech stack icons -->
+                                <i class="devicon-dotnetcore-plain px-1"></i>
+                                <i class="devicon-javascript-plain px-1"></i>
+                                <i class="devicon-mariadb-original-wordmark px-1"></i>
+                                <i class="devicon-jquery-plain-wordmark px-1"></i>
+
+
+                            </div>
+
+                            <h3 class="fs-2 text-body-emphasis" data-bs-theme="dark">Red Book</h3>
+                            <!-- Project Description -->
+                            <p>
+                                A Web App that will allow you to select your favorite Maplestory Scrolls and assign
+                                prices to them.
+                                <br />
+                                <br />
+                                Features:
+                            <ul class="text-start">
+                                <li>User Login: users can log in and maintain their own favorite scroll list </li>
+                                <li>Scroll Search: search through hundreds of scrolls, you may use drop down menus to
+                                    select which particular attribute you would like to search for.</li>
+                                <li>Price Adjust: users can adjust the prices of the items and update the current value
+                                    of the items in the data base.</li>
+                                <li>Top 10: queries the database and grabs the top 10 highest price scrolls in the game.
+                                </li>
+                            </ul>
+                            </p>
+
+                            <!-- Project Links (Demo, GitHub, Documentation) -->
+                            <!-- <a asp-page="/RedBook/Index" class="icon-link">
+                    Demo
+                    <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                </a> -->
+                            <a href="https://drive.google.com/file/d/17lamJOJz0gCkvPsvuPLTK_Youqd_jA3_/view?usp=drive_link"
+                                class="icon-link">
+                                Design Document
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/RyanAtRowan/MoonPi_UnPublished" class="icon-link">
+                                GitHub
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- Portfolio Project -->
+                        <div class="pb-4 feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-body fs-2 mb-3">
+                                <!-- Tech stack icons -->
+                                <i class="devicon-dotnetcore-plain px-1"></i>
+                                <i class="devicon-javascript-plain px-1"></i>
+                                <i class="devicon-raspberrypi-plain px-1"></i>
+                            </div>
+                            <h3 class="fs-2 text-body-emphasis" data-bs-theme="dark">Portfolio</h3>
+                            <!-- Project Description -->
+                            <p>
+                                This website was created using ASP.NET Core with Razor pages.
+                                <br />
+                                <br />
+                                Features:
+                            <ul class="text-start">
+                                <li>
+                                    Bootstrap: many elements of this page are customized bootstrap elements and
+                                    properties.
+                                </li>
+                                <li>
+                                    Raspberry Pi Deployment: the challenge of deploying a website is particularly
+                                    satisfying problem to solve.
+                                    For many, Azure is the first service that comes to mind when trying to host a
+                                    project. Azure has many
+                                    tools and a seemless integrated experience for .NET projects. For home brewed
+                                    projects, however, I was looking for something
+                                    affordable and lightweight.
+                                </li>
+                            </ul>
+                            </p>
+
+                            <!-- Project Links (Demo, GitHub, Documentation) -->
+                            <a href="https://drive.google.com/file/d/1U9V9fAHDfpWO-uK0cthwSfv5AaeUEmwf/view?usp=drive_link"
+                                class="icon-link">
+                                Design Document
+                                <svg class="bi">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </main>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer d-flex flex-wrap justify-content-between py-3 mt-4 px-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-body-secondary"></span>
+        </div>
+
+        <!-- Social media links in footer -->
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex" style="font-size: 20px">
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.linkedin.com/in/ryan-tombleson-6499ba231/">
+                    <i class="devicon-linkedin-plain">
+                        <use xlink:href="#linkedin"></use>
+                    </i>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/RyanAtRowan">
+                    <i class="devicon-github-original">
+                        <use xlink:href="#github"></use>
+                    </i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Script Section -->
+    <script src="../assets/js/active-page.js" defer></script>
+    <script src="../assets/js/fade-in.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>
